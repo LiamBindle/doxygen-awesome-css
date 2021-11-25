@@ -297,12 +297,12 @@ a:link, a:visited, a:hover, a:focus, a:active {
 
 #main-nav {
     flex-grow: 5;
-    padding: var(--spacing-small) var(--spacing-medium);
+    padding: var(--spacing-medium) var(--spacing-medium);
 }
 
 #titlearea {
     width: auto;
-    padding: var(--spacing-medium) var(--spacing-large);
+    padding: 0 var(--spacing-large);
     background: none;
     color: var(--header-foreground);
     border-bottom: none;
@@ -321,6 +321,7 @@ a:link, a:visited, a:hover, a:focus, a:active {
 #projectname {
     font-size: var(--title-font-size);
     font-weight: 600;
+    display: none;
 }
 
 #projectnumber {
@@ -338,7 +339,7 @@ a:link, a:visited, a:hover, a:focus, a:active {
 }
 
 #projectlogo img {
-    max-height: calc(var(--title-font-size) * 2);
+    max-height: calc(var(--top-height) - var(--searchbar-height) - var(--spacing-medium)*2);
     margin-right: var(--spacing-small);
 }
 
